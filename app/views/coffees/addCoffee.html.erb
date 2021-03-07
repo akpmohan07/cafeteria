@@ -1,0 +1,17 @@
+<div style="margin:auto;width:35%;">
+    <h1 style="text-align:center;" class="display-4 font-weight-bolder text-info" >Add Coffee</h1>
+    <form style="margin:20px;">
+        <div class="input-group input-group-lg" style="margin:20px;">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Coffee Name</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Coffee Name">
+        </div>
+        <div class="input-group input-group-lg" style="margin:20px;">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Coffee Image</span>
+        <input class="form-control" type="file" id="formFile" >
+        </div>
+        <div style="margin:20px;text-align:center;" >
+        <%= button_to "Add Coffee", :method=> "auth"%>
+
+        </div>
+    </form>
+</div>

@@ -15,7 +15,7 @@ class CoffeesController < ApplicationController
     end
     def auth
         if(params["email"] == "admin@cafteria.com" && params["pwd"] == "admin")
-            render plain: "loged in"
+            render :addCoffee
         else
             render plain: "Email or Password wrong :("
         end
