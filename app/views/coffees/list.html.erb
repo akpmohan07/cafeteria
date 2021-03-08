@@ -1,9 +1,21 @@
-<div style="display: flex;">
+<div style="display: flex;flex-wrap: wrap;margin:auto">
 <% Coffee.all.each do |copy|  %>
-    <div class="card" style="width:18rem;margin: auto">
+
+    <div class="card" style="width:18rem;margin: 10px;">
     <img src=<%= copy['img_url'] %> class="card-img-top" alt="...">
     <div class="card-body">
     <h4 class="card-title" style="text-align:center;font-weight:bold"><%= copy['name'] %> </h4>
     </div>
+    <% if @admins %>
+       <i onclick="window.location = '/delete/<%=copy["id"]%>'" class="fa fa-trash" style="position: relative;text-align:right;margin:5px;cursor:pointer"></i> 
+    <% end %>
     </div>
+
+    
+<% end %>
+</div>
+<% if @admins %>
+    <div style="margin:20px;text-align:center;">
+     <button onclick="window.location = '/auth'"; type="submit" class="btn btn-primary">Add Another Coffee</button>
+     </div>
 <% end %>
