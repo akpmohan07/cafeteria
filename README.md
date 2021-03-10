@@ -1,24 +1,4 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# About
+Cafeteria Management App
+# Database Schema
+![enter image description here](https://raw.githubusercontent.com/akpmohan07/cafeteria/8d340c8a043a99a281639e425f18e037eb5d20d8/Readme/db_schema.png)
