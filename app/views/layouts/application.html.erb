@@ -13,6 +13,11 @@
   </head>
 
   <body style="background-color: #fff5eb;">
+    <% if  @current_user %>
+    <p class="user-header">
+      <%= @current_user.name %>
+    </p>
+    <% end %>
     <div class="jumbotron jumbotron-fluid shadow-lg p-3 mb-5 rounded-pill" style="margin:20px;">
     <div class="container">
       <h1 onclick="window.location = '/'" class="display-4 font-weight-bolder" style="text-align: center;cursor:wait">Earth's best coffee☕</h1>

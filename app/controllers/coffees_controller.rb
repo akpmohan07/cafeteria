@@ -1,5 +1,4 @@
 class CoffeesController < ApplicationController
-    skip_before_action :verify_authenticity_token
     @@admin = false
     def list
         render :list 
