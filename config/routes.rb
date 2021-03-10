@@ -7,5 +7,7 @@ Rails.application.routes.draw do
   post 'addCoffee',to: 'coffees#addCoffee'
   get 'addCoffee',to: 'coffees#auth'
   get 'delete/:id',to: 'coffees#delete'
+
+  resources :users
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.htm
 end

@@ -1,0 +1,21 @@
+.new-user{
+    text-align: center;
+}
+.form-section{
+    margin: 10px;
+}
+.form-input{
+    font-size: 20px;
+    padding: 8px;
+}
+.form-label{
+    color:#555555;
+    margin-bottom: 10px;
+}
+.form-submit{
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(176, 255, 183);
+    border: 0;
+    border-radius:  10px;
+}
